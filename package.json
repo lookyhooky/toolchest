@@ -1,0 +1,23 @@
+{
+  "name": "toolchest",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "A module full of tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lookyhooky/toolchest.git"
+  },
+  "author": "John Hooks",
+  "bugs": {
+    "url": "https://github.com/lookyhooky/toolchest/issues"
+  },
+  "homepage": "https://github.com/lookyhooky/toolchest#readme",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "mocha": "^2.2.5"
+  }
+}
