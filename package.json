@@ -1,11 +1,11 @@
 {
   "name": "toolchest",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A module full of tools",
-  "main": "toolchest.js",
+  "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -15,11 +15,5 @@
   "bugs": {
     "url": "https://github.com/lookyhooky/toolchest/issues"
   },
-  "homepage": "https://github.com/lookyhooky/toolchest#readme",
-  "devDependencies": {
-    "chai": "^3.0.0",
-    "gulp": "^3.9.0",
-    "gulp-standard": "^4.5.3",
-    "mocha": "^2.2.5"
-  }
+  "homepage": "https://github.com/lookyhooky/toolchest#readme"
 }
