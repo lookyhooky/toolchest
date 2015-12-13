@@ -1,10 +1,8 @@
-ToolChest
-======
+# ToolChest
 
 A module full of practical tools. The true purpose of toolchest is to aid
-the author with learn javascript from the ground up.
+the author in learning javascript from the ground up.
 
-Usage
------
+## Usage
 
-This module is intended to be used as a collection of functions.
+This module is a static object of methods.

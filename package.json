@@ -1,7 +1,7 @@
 {
   "name": "toolchest",
   "license": "MIT",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A module full of tools",
   "main": "index.js",
   "scripts": {
