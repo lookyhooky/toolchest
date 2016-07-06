@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const repl = require('repl')
+
+const util = require('../util')
+const toolchest = require('../toolchest')
+
+var local = repl.start('chest> ')
+
+// Dump all the tool into the repl local context
+for (let tool in toolchest) {
+  local.context[tool] = toolchest[tool]
+}
+
+local.context['util'] = util

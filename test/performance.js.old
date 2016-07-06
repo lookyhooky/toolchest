@@ -1,0 +1,41 @@
+/**
+ * toolchest-test.js
+ */
+
+var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+var each = tools.each
+var curryEach = tools.fn.each
+
+var add = tools.fn.reduce(function (cumulate, item) { return cumulate + item })
+
+var perform = function (item) { item + 100 }
+var loop = function (fn, times) {
+  var i
+  for (i = 0; i < times; i++) {
+    fn()
+  }
+}
+var timer = new tools.Timer('system forEach')
+loop(function () {
+  items.forEach(perform)
+}, 10000)
+timer.log()
+
+timer = new tools.Timer('each')
+loop(function () {
+  each(items, perform)
+}, 10000)
+timer.log()
+
+timer = new tools.Timer('curry each')
+loop(function () {
+  curryEach(perform, items)
+}, 10000)
+timer.log()
+
+timer = new tools.Timer('curry partial')
+loop(function () {
+  var performEach = curryEach(perform)
+  performEach(items)
+}, 10000)
+timer.log()
